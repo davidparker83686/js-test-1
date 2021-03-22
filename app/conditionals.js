@@ -1,7 +1,11 @@
 //1. Given two numbers, write a function that will return  the larger number
 
 function largerNum(num1, num2) {
-    // you code here
+    if( num1 > num2 ){
+        return num1
+    } else {
+        return num2
+    }
 
 }
 
@@ -14,6 +18,17 @@ function largerNum(num1, num2) {
 // output: "F"
 
 function testGrader(score, possible) {
+    if(90,100){
+        return "A"
+    } else if(80,100){
+        return "B"
+    } else if(70,100){
+        return "C"
+    } else if(60,100){
+        return "D"
+    } else if(50,100){
+        return "F"
+    }
 
 }
 
@@ -29,12 +44,32 @@ function testGrader(score, possible) {
 //Make sure your ranges are inclusive
 
 function timeOfDayGreeting(hour) {
-    // you code below
+   if(hour <= 4){
+       return "good night"
+   }else if(5<= hour <=11){
+       return "good morning"
+   }else if(12<= hour <=17){
+       return "good afternoon"
+   }else if(18<= hour <=21){
+       return "good evening"
+   }else if(22<= hour <=24){
+       return "good night"
+   }
 
 }
 
 //4. Write a function that will take in a number and return 'fever' if it indicates a fever (over 98.6) and additionally if the person should go to the hospital (at or above 103) 'fever go to hospital' (hint: try this with string concatenation), if it is under return 'no fever'
 function isFever(temp) {
+    if(temp <= 98.6){
+        return "no fever"
+    }else{
+        return "fever"
+    } if(temp>=103){
+        return "fever"+""+"go to hospital"
+    }
+
+
+
 
 }
 
@@ -48,6 +83,7 @@ let myCar = {
 
 function isStopped(car) {
 
+
 }
 
 //6. Write a function that returns true if a dish is yours and is dirty, or false if one of the statements is false
@@ -58,5 +94,10 @@ let dish = {
 }
 
 function washDish(dish) {
+    if ((yourDish=true)=(isDirty=true)){
+        return true
+    }else{
+        return false
+    }
 
 }
