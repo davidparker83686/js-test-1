@@ -18,18 +18,20 @@ function largerNum(num1, num2) {
 // output: "F"
 
 function testGrader(score, possible) {
-    if(90,100){
-        return "A"
-    } else if(80,100){
-        return "B"
-    } else if(70,100){
-        return "C"
-    } else if(60,100){
-        return "D"
-    } else if(50,100){
-        return "F"
-    }
 
+    let percent=(score/possible)
+
+    if(percent>=90){
+        return 'A'
+    } else if(90< percent && percent >=80){
+        return 'B'
+    } else if(80< percent && percent >=76){
+        return 'C'
+    } else if(60< percent && percent >=50){
+        return 'D'
+    } else if(50< percent ){
+        return 'F'
+    }
 }
 
 
@@ -46,13 +48,13 @@ function testGrader(score, possible) {
 function timeOfDayGreeting(hour) {
    if(hour <= 4){
        return "good night"
-   }else if(5<= hour <=11){
+   } else if(5<= hour && hour <=11){
        return "good morning"
-   }else if(12<= hour <=17){
+   } else if(12<= hour && hour <=17){
        return "good afternoon"
-   }else if(18<= hour <=21){
+   } else if(18<= hour && hour <=21){
        return "good evening"
-   }else if(22<= hour <=24){
+   } else if(22<= hour && hour <=24){
        return "good night"
    }
 
@@ -60,13 +62,16 @@ function timeOfDayGreeting(hour) {
 
 //4. Write a function that will take in a number and return 'fever' if it indicates a fever (over 98.6) and additionally if the person should go to the hospital (at or above 103) 'fever go to hospital' (hint: try this with string concatenation), if it is under return 'no fever'
 function isFever(temp) {
-    if(temp <= 98.6){
-        return "no fever"
-    }else{
-        return "fever"
-    } if(temp>=103){
-        return "fever"+""+"go to hospital"
-    }
+    // if(temp <= 98.6){
+    //     return "no fever"
+    // }else if(
+
+
+    // ){
+    //     return "fever"
+    // } if(temp>=103){
+    //     return "fever"+""+"go to hospital"
+    // }
 
 
 
@@ -94,7 +99,7 @@ let dish = {
 }
 
 function washDish(dish) {
-    if ((yourDish=true)=(isDirty=true)){
+    if ((dish.yourDish==true && dish.isDirty==true)){
         return true
     }else{
         return false
