@@ -21,17 +21,34 @@ function testGrader(score, possible) {
 
     let percent=(score/possible)
 
-    if(percent>=90){
-        return 'A'
-    } else if(90< percent && percent >=80){
-        return 'B'
-    } else if(80< percent && percent >=76){
-        return 'C'
-    } else if(60< percent && percent >=50){
-        return 'D'
-    } else if(50< percent ){
-        return 'F'
-    }
+    // if(percent>=90){
+    //     return 'A'
+    // } else if(90< percent && percent >=80){
+    //     return 'B'
+    // } else if(80< percent && percent >=76){
+    //     return 'C'
+    // } else if(60< percent && percent >=50){
+    //     return 'D'
+    // } else if(50< percent ){
+    //     return 'F'
+    // }
+
+   
+
+
+    // if(percent>=90){
+    //     return 'A'
+    // } else if(90< percent && percent >=80){
+    //     return 'B'
+    // } else if(80< percent && percent >=76){
+    //     return 'C'
+    //     break;
+    // } else if(60< percent && percent >=50){
+    //     return 'D'
+    //     break;
+    // } else if(50< percent ){
+    //     return 'F'
+    // }
 }
 
 
@@ -46,17 +63,17 @@ function testGrader(score, possible) {
 //Make sure your ranges are inclusive
 
 function timeOfDayGreeting(hour) {
-   if(hour <= 4){
-       return "good night"
-   } else if(5<= hour && hour <=11){
-       return "good morning"
-   } else if(12<= hour && hour <=17){
-       return "good afternoon"
-   } else if(18<= hour && hour <=21){
-       return "good evening"
-   } else if(22<= hour && hour <=24){
-       return "good night"
-   }
+//    if(hour <= 4){
+//        return "good night"
+//    } else if(5<= hour && hour <=11){
+//        return "good morning"
+//    } else if(12<= hour && hour <=17){
+//        return "good afternoon"
+//    } else if(18<= hour && hour <=21){
+//        return "good evening"
+//    } else if(22<= hour && hour <=24){
+//        return "good night"
+//    }
 
 }
 
