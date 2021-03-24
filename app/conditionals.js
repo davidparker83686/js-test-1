@@ -19,36 +19,20 @@ function largerNum(num1, num2) {
 
 function testGrader(score, possible) {
 
-    let percent=(score/possible)
+    let percent=(score/possible)*100
 
-    // if(percent>=90){
-    //     return 'A'
-    // } else if(90< percent && percent >=80){
-    //     return 'B'
-    // } else if(80< percent && percent >=76){
-    //     return 'C'
-    // } else if(60< percent && percent >=50){
-    //     return 'D'
-    // } else if(50< percent ){
-    //     return 'F'
-    // }
+    if(percent>=90){
+        return 'A'
+    } else if(90> percent && percent >=80){
+        return 'B'
+    } else if(80> percent && percent >=70){
+        return 'C'
+    } else if(70> percent && percent >=60){
+        return 'D'
+    } else if(60> percent ){
+        return 'F'
+    }
 
-   
-
-
-    // if(percent>=90){
-    //     return 'A'
-    // } else if(90< percent && percent >=80){
-    //     return 'B'
-    // } else if(80< percent && percent >=76){
-    //     return 'C'
-    //     break;
-    // } else if(60< percent && percent >=50){
-    //     return 'D'
-    //     break;
-    // } else if(50< percent ){
-    //     return 'F'
-    // }
 }
 
 
@@ -63,36 +47,29 @@ function testGrader(score, possible) {
 //Make sure your ranges are inclusive
 
 function timeOfDayGreeting(hour) {
-//    if(hour <= 4){
-//        return "good night"
-//    } else if(5<= hour && hour <=11){
-//        return "good morning"
-//    } else if(12<= hour && hour <=17){
-//        return "good afternoon"
-//    } else if(18<= hour && hour <=21){
-//        return "good evening"
-//    } else if(22<= hour && hour <=24){
-//        return "good night"
-//    }
+   if(hour <= 4){
+       return "good night"
+   } else if(5<= hour && hour <=11){
+       return "good morning"
+   } else if(12<= hour && hour <=17){
+       return "good afternoon"
+   } else if(18<= hour && hour <=21){
+       return "good evening"
+   } else if(22<= hour && hour <=24){
+       return "good night"
+   }
 
 }
 
 //4. Write a function that will take in a number and return 'fever' if it indicates a fever (over 98.6) and additionally if the person should go to the hospital (at or above 103) 'fever go to hospital' (hint: try this with string concatenation), if it is under return 'no fever'
 function isFever(temp) {
-    // if(temp <= 98.6){
-    //     return "no fever"
-    // }else if(
-
-
-    // ){
-    //     return "fever"
-    // } if(temp>=103){
-    //     return "fever"+""+"go to hospital"
-    // }
-
-
-
-
+    if(temp>=103){
+        return 'fever go to hospital'
+    } else if(temp>98.6){
+        return 'fever'
+    }else{
+        return "no fever"
+    }
 }
 
 //5. Write a function that takes in a car object, if it is not moving then return true
@@ -104,8 +81,11 @@ let myCar = {
 }
 
 function isStopped(car) {
-
-
+    if(car.moving==false){
+        return true
+    }else if(car.moving!=false){
+        return false
+    }
 }
 
 //6. Write a function that returns true if a dish is yours and is dirty, or false if one of the statements is false

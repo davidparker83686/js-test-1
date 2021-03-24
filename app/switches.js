@@ -1,4 +1,5 @@
 // 1. Given a string with the value of a day of the week, return the number that that day is in the week. A second argument will be provided to determine if should start week on Monday if true, else Sunday if false. If the string is not a day of the week but is bad input, then return the string 'That's not a day of the week'.
+
 // Example: 
     // input: 'Sunday', false
     // output: 1
@@ -7,6 +8,16 @@
     // output: 7
 
 function daysPosition(day, offset) {
+    e
+    switch(expression) {
+        case 1:
+          // code block
+          break;
+        case 7:
+          // code block
+          break;
+        default:
+          // code block
 
 
 }
